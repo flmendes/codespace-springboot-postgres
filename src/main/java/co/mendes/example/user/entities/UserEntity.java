@@ -9,6 +9,6 @@ public class UserEntity implements Serializable {
 
     public String name;
 
-    public Strign email;
+    public String email;
 
 }

@@ -20,7 +20,7 @@
 	"customizations": {
 		"codespaces": {},
 		"vscode": {
-			"extensions": ['vscode-spring-initializr', 'vscjava.vscode-java-pack', 'SonarSource.sonarlint-vscode', 'vscjava.vscode-spring-initializr', 'redhat.fabric8-analytics']
+			"extensions": ['vscjava.vscode-java-pack', 'SonarSource.sonarlint-vscode', 'vmware.vscode-boot-dev-pack', 'redhat.fabric8-analytics']
 		}
 	},
 

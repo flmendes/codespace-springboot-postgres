@@ -1,10 +1,11 @@
 package co.mendes.example.user.controllers;
 
-import java.util.List;
-
 import org.springframework.data.web.PageableDefault;
 import org.springframework.data.web.SortDefault;
 import org.springframework.data.domain.Sort;
+
+import java.util.Map;
+
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
@@ -44,6 +45,11 @@ public class UserController {
     }) Pageable pageable)
     {
         return userService.findAll(pageable);
+    }
+
+    @PostMapping("/by-email")
+    public ResponseEntity<CreatedUserDTO> findByEmail(@RequestBody Map<String, String> body){
+        return new ResponseEntity<>(userService.findByEmail(body.get("email")), HttpStatus.OK);
     }
 
 }
